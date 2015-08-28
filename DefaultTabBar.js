@@ -43,7 +43,7 @@ var DefaultTabBar = React.createClass({
     var isTabActive = this.props.activeTab === page;
 
     return (
-      <TouchableOpacity style={[styles.tab] key={name} onPress={() => this.props.goToPage(page)}>
+      <TouchableOpacity style={[styles.tab]} key={name} onPress={() => this.props.goToPage(page)}>
         <Text style={{color: isTabActive ? 'navy' : 'black', fontWeight: isTabActive ? 'bold' : 'normal'}}>{name}</Text>
       </TouchableOpacity>
     );
